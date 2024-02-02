@@ -1,0 +1,42 @@
+Fotos:{
+    Relógio:(
+        -Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/dispositivo-aparelho-equipamento-gadget-7671475/
+        -Foto de Torsten Dettlaff: https://www.pexels.com/pt-br/foto/relogio-apple-preto-com-faixa-esportiva-preta-437037/
+        -Foto de Torsten Dettlaff: https://www.pexels.com/pt-br/foto/alavanca-de-mudanca-de-marcha-preta-e-prata-do-carro-437036/
+        -Foto de cottonbro studio: https://www.pexels.com/pt-br/foto/anonimo-relogio-apple-apple-watch-digital-5081914/
+    )
+    Fone de ouvido:(
+        -Foto de Darina Belonogova: https://www.pexels.com/pt-br/foto/conexao-ligacao-vinculo-mao-8004012/
+        -Foto de Darina Belonogova: https://www.pexels.com/pt-br/foto/maos-segurando-holding-smartphone-8004013/
+        -Foto de ready made: https://www.pexels.com/pt-br/foto/caso-caixa-estojo-hipotese-3921845/
+        -Foto de ready made: https://www.pexels.com/pt-br/foto/borrao-mancha-nevoa-caso-3921847/
+    )
+    Câmera(
+        -Foto de Silvia Trigo: https://www.pexels.com/pt-br/foto/fotografia-com-foco-raso-da-camera-dslr-preta-1292770/
+        -Foto de Sameer Kalani: https://www.pexels.com/pt-br/foto/camera-preta-canon-dslr-3802602/
+        -Foto de Cristo Nova: https://www.pexels.com/pt-br/foto/abertura-dispositivo-aparelho-equipamento-4413826/
+        -Foto de Karl Solano: https://www.pexels.com/pt-br/foto/abertura-cameras-maquinas-canone-11036445/
+    )
+    Notbook(
+        -Foto de Anna Nekrashevich: https://www.pexels.com/pt-br/foto/computador-computador-portatil-laptop-notebook-8534378/
+        -Foto de Mahdi Daldawala: https://www.pexels.com/pt-br/foto/mouse-apple-computador-teclado-computador-portatil-4812932/
+        -Foto de Efrem  Efre : https://www.pexels.com/pt-br/foto/teclado-computador-portatil-laptop-notebook-12935279/
+        -Foto de Anna Nekrashevich: https://www.pexels.com/pt-br/foto/computador-dispositivo-aparelho-equipamento-8533587/
+    )
+    VR(
+        -Foto de Artem Podrez: https://www.pexels.com/pt-br/foto/tecnologia-fone-de-ouvido-de-realidade-virtual-realidade-virtual-vr-7774034/
+        -Foto de VAZHNIK: https://www.pexels.com/pt-br/foto/experiencia-segurando-holding-dentro-de-casa-7871500/
+        -Foto de Pavel Danilyuk: https://www.pexels.com/pt-br/foto/lazer-diversao-tempo-livre-passatempo-7776229/
+        -Foto de Artem Podrez: https://www.pexels.com/pt-br/foto/equipamento-eletronico-eletronicos-controle-de-videogame-joystick-7773980/
+    )
+    Assistente virtual(
+        -Foto de Jonathan Borba: https://www.pexels.com/pt-br/foto/aparelho-eletronico-dispositivo-eletronico-iluminado-luminoso-14309811/
+        -Foto de Jonathan Borba: https://www.pexels.com/pt-br/foto/fundo-preto-aparelho-eletronico-dispositivo-eletronico-fotografia-de-produto-14309807/
+        -Foto de Jonathan Borba: https://www.pexels.com/pt-br/foto/fundo-preto-aparelho-eletronico-dispositivo-eletronico-fotografia-de-produto-14309810/
+        -Foto de Jonathan Borba: https://www.pexels.com/pt-br/foto/fundo-preto-aparelho-eletronico-dispositivo-eletronico-fotografia-de-produto-14309805/
+    )
+}
+Icones{
+    -https://www.flaticon.com/br/icones-gratis/engrenagem"
+    -https://fonts.google.com/icons
+}
