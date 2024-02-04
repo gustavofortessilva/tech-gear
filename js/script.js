@@ -13,6 +13,6 @@ function abreFechaMenuHamb(){
         setTimeout(() => {
             menuHamb.style.display = "none"
             ulHamb.setAttribute("class", "hamb-fix-up")
-        }, 500)
+        }, 380)
     }
 }

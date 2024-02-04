@@ -35,8 +35,14 @@ Fotos:{
         -Foto de Jonathan Borba: https://www.pexels.com/pt-br/foto/fundo-preto-aparelho-eletronico-dispositivo-eletronico-fotografia-de-produto-14309810/
         -Foto de Jonathan Borba: https://www.pexels.com/pt-br/foto/fundo-preto-aparelho-eletronico-dispositivo-eletronico-fotografia-de-produto-14309805/
     )
+    Banner(
+        -Foto de Miguel Á. Padriñán: https://www.pexels.com/pt-br/foto/placa-de-circuito-verde-343457/
+    )
 }
 Icones{
     -https://www.flaticon.com/br/icones-gratis/engrenagem"
     -https://fonts.google.com/icons
+    -https://www.flaticon.com/br/icones-gratis/instagram
+    -https://www.flaticon.com/br/icones-gratis/facebook
+    -https://www.flaticon.com/br/icone-gratis/whatsapp
 }

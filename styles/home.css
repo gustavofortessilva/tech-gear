@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@keyframes downHamb {
+    0%{
+        transform: translateY(-86px)
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes upHamb {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-86px);
+    }
+}
+
+:root{
+    --azulEscuro:#2C3E50;
+    --azulClaro:#3498DB;
+    --branco:#ECF0F1;
+    --vermelho:#E74C3C;
+}
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    position: relative;
+    color: var(--branco);
+    text-align: center;
+}
+
+header div.header-top{
+    background-image: linear-gradient(135deg , var(--azulEscuro), #0f4a71);
+    padding: 10px;
+}
+
+header div.header-top p{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.95em
+}
+
+header nav.buttons{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    gap: 15px;
+}
+
+header nav.buttons a{
+    color: var(--branco);
+}
+
+header div.logo{
+    margin: 10px 30px;
+}
+
+header div.logo img{
+    display: inline-block;
+    width: 130px;
+}
+
+/* botão menu hamb */
+header nav.menu span.btn-hamb{
+    display: block;
+    background-color: #344c64;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #00000052;
+}
+
+header nav.menu span.btn-hamb:hover{
+    background-color: #415f7e;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+/* menu hamb */
+div.menu-hamb{
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+/* classes animações menu hamb */
+.hamb-anim-down{
+    animation: downHamb 1.1s ease .1s ; 
+    animation-fill-mode: backwards;
+    transform: translateY(0px);
+}
+.hamb-fix-down{
+    transform: translateY(0px);
+}
+.hamb-anim-up{
+    animation: upHamb 0.4s ease-in-out;
+}
+.hamb-fix-up{
+    transform: translateY(-86px);
+}
+/* Elementos menu hamb */
+div.menu-hamb ul li{
+    background-color: #2070a5;
+    padding: 10px;
+    border-bottom: 2px solid #3498DB;
+    transition: border-color .3s, background-color .3s;
+}
+
+div.menu-hamb ul li:hover{
+    background-color: #298aca;
+    border-color: #2fb2c9;
+    cursor: pointer;
+}
+
+div.menu-hamb ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* banner */
+section.banner{
+    background-image: url(../img/outros/banner.png);
+    background-size: contain;
+    background-position: center center;
+    padding: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+/* Texto banner */
+section.banner h2{
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 8px #000000b0;
+    border-radius: 10px;
+    margin: 0px 30px;
+}
+/* Botão banner */
+section.banner a{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #0000008c;
+    border: 3px solid #0000006b;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color .4s;
+}
+section.banner a:hover{
+    background-color: #000000b7;
+    border-color: #0000008c;
+}
+/* seção destaques */
+section.destaques{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* item destaque */
+section.destaques div.dest-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 85%;
+    overflow: hidden;
+}
+/* imagem item destaque */
+section.destaques div.dest-item img{
+    display: inline-block;
+    width: 100%;
+}
+/* texto item em destaque */
+section.destaques div.dest-item div.dest-txt{
+    text-align: center;
+}
+div.dest-txt span.low-text{
+    color: var(--azulClaro);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
+}
