@@ -36,12 +36,10 @@ footer div.logo-footer h2{
 }
 /* Div links */
 footer div.links{
-    margin: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    padding: 0px 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer div.links h3{
@@ -51,14 +49,19 @@ footer div.links h3{
 
 /* Links */
 footer div.links-itens{
-    padding-top: 25px;
+    padding-top: 40px;
+    text-align: center;
 }
 footer div.links-itens ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     list-style: none;
 }
 footer div.links-itens ul li{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     margin: 10px;
 }
@@ -70,8 +73,17 @@ img#whats{
     border-radius: 50%;
 }
 /* Borda em baixo dos elementos */
-footer div.logo-footer, footer div.links{
-    padding-bottom: 25px;
-    border-bottom: 1.5px solid var(--branco);
-    margin: 0px 40px;
+footer div.links div.border-bottom{
+    width: 70vw;
+    border-bottom: 3px solid var(--branco);
+    margin: 20px auto;
+}
+/* Texto disclaimer */
+footer p{
+    color: var(--branco);
+}
+/* link texto disclaimer */
+footer p a{
+    color: var(--branco);
+    text-decoration: none;
 }

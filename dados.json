@@ -1,0 +1,68 @@
+[
+    {
+        "id": "0001",
+        "name": "Assistente de Casa Inteligente",
+        "preco": 300,
+        "capa":"/img/assistente/assistente-1.jpg",
+        "destaque": false,
+        "desc1": "Controle sua casa com tecnologia de ponta",
+        "desc2": "Experiência sonora ainda melhor, com vocais mais nítidos, graves mais potentes e um som vibrante",
+        "desc3": "O novo display de LED exibe a previsão do tempo, títulos de músicas e muito mais",
+        "desc4": "Mantenha a casa confortável ao criar rotinas com o novo sensor de temperatura"
+    },
+    {
+        "id": "0002",
+        "name": "Câmera DSLR de Última Geração",
+        "preco": null,
+        "capa":"/img/camera/camera-1.jpg",
+        "destaque": true,
+        "desc1": "Controle sua casa com tecnologia de ponta",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+    },
+    {
+        "id": "0003",
+        "name": "Fones de Ouvido sem Fio Premium",
+        "preco":null,
+        "capa":"/img/fone/fone-1.jpg",
+        "destaque": false,
+        "desc1": "Cancelamento de ruído e qualidade de áudio excepcional",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+    },
+    {
+        "id": "0004",
+        "name": "Notebook Ultrafino e Potente",
+        "preco":null,
+        "capa":"/img/notebook/notebook-1.jpg",
+        "destaque": false,
+        "desc1": "Design elegante e alto desempenho",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+    },
+    {
+        "id": "0005",
+        "name": "Smartwatch Avançado",
+        "preco":null,
+        "capa":"/img/relogio/relogio-1.jpg",
+        "destaque": true,
+        "desc1": "Contém recursos de monitoramento de saúde e conectividade",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+    },
+    {
+        "id": "0006",
+        "name": "Kit de Realidade Virtual",
+        "preco":null,
+        "capa":"/img/vr/vr-1.jpg",
+        "destaque": false,
+        "desc1": "Explore mundos virtuais imersivos",
+        "desc2": "",
+        "desc3": "",
+        "desc4": ""
+    }
+]

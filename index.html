@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body>
+<body onload="destaquesHome()">
     <header>
         <div class="header-top">
             <nav class="buttons">
@@ -45,26 +45,14 @@
        </section> 
        <section class="destaques">
             <h2>Destaques:</h2>
-            <div class="dest-item">
-                    <img src="img/fone/fone-1.jpg" alt="fone de ouvido">
-                    <div class="dest-txt">
-                        <h3>Fone de ouvido sem fio <span class="low-text">(Premium)</span></h3>
-                        <p>Cancelamento de ruído e qualidade de áudio <strong>exepcional</strong></p>
-                </div>
-            </div>
-            <div class="dest-item">
-                    <img src="img/assistente/assistente-1.jpg" alt="assistente virtual casa inteligente">
-                    <div class="dest-txt">
-                        <h3>Assistente de Casa Inteligente</h3>
-                        <p>Controle sua casa com <strong>tecnologia de ponta</strong></p>
-                </div>
-            </div>
+            
        </section>
     </main>
     <footer>
         <div class="logo-footer">
-            <img src="img/outros/Logo.png" alt="logo engrenagem">
+            <img src="img/outros/icon-logo.png" alt="logo engrenagem">
             <h2>Teck Gear Emporium</h2>
+            <div class="border-bottom"></div>
         </div>
         <div class="links">
             <div class="links-itens">
@@ -75,18 +63,22 @@
                     <li><a href="#">Contato</a></li>
                     <li><a href="#">Carrinho</a></li>
                 </ul>
+                <div class="border-bottom"></div>
             </div>
             <div class="links-itens">
                 <h3>Links para Contato:</h3>
                 <ul>
-                    <li><span class="material-symbols-outlined">call</span><a href="#">Telefone <br> (99)9 9999-9999</a></li>
+                    <li><span class="material-symbols-outlined">call</span><a href="#">Telefone</a></li>
                     <li><img src="img/outros/icons/icon-instagram.png" alt="" width="25px"><a href="#">Instagram</a></li>
                     <li><img src="img/outros/icons/icon-facebook.png" alt=""><a href="#">Facebook</a></li>
                     <li><img src="img/outros/icons/icon-whatsapp.png" id="whats" alt="" width="28px"><a href="#">Whatsapp</a></li>
                 </ul>
+                <div class="border-bottom"></div>
+                <p>Esta página foi criada por <strong><a href="https://github.com/gustavofortessilva">Gustavo Fortes</a></strong>, como um modelo, portanto não possui funcionalidade real. Algumas funcionalidades não estão funcionando completamente, pois este site é somente para exercitar minhas habilidades com HTML, CSS e JavaScript</p>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/geral.js"></script>
+    <script src="js/builder.js"></script>
 </body>
 </html>

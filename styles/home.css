@@ -17,6 +17,11 @@
         transform: translateY(-86px);
     }
 }
+/* Excluir antes de terminar */
+::-webkit-scrollbar{
+    display: none;
+}
+/* Excluir antes de terminar */
 
 :root{
     --azulEscuro:#2C3E50;
@@ -151,6 +156,7 @@ section.banner h2{
 }
 /* Botão banner */
 section.banner a{
+    text-align: center;
     color: white;
     font-size: 1.1em;
     font-weight: bold;
@@ -159,7 +165,7 @@ section.banner a{
     background-color: #0000008c;
     border: 3px solid #0000006b;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     transition: background-color .4s;
 }
 section.banner a:hover{
@@ -193,6 +199,5 @@ section.destaques div.dest-item div.dest-txt{
     text-align: center;
 }
 div.dest-txt span.low-text{
-    color: var(--azulClaro);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.137);
+    color: gray;
 }
