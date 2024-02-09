@@ -6,6 +6,9 @@ function createCardProduto(dado,container){
     item.classList.add("dest-item")
     //imagem produto
     let image = document.createElement("img")
+    //bottom produto
+    let divBottom = document.createElement("div")
+    divBottom.classList.add("item-dest-bottom")
     //div textos produto
     let divtxt = document.createElement("div")
     divtxt.classList.add("dest-txt")
@@ -29,7 +32,7 @@ function createCardProduto(dado,container){
     image.alt = dado.name
     preco.innerHTML = dado.preco
     link.innerHTML = "Veja mais informações"
-    link.href = `tech-gear/paginas-produtos/${dado.id}.html`
+    link.href = `tech-gear/paginas-produtos/${dado.name}.html`
     //atribuindo elementos a página
     if(dado.destaque == true){
         precoantes.innerHTML = dado.precoanterior
@@ -39,8 +42,9 @@ function createCardProduto(dado,container){
     divtxt.appendChild(titulo)
     divtxt.appendChild(divprecos)
     item.appendChild(image)
-    item.appendChild(divtxt)
-    item.appendChild(link)
+    divBottom.appendChild(divtxt)
+    divBottom.appendChild(link)
+    item.appendChild(divBottom)
     destaques.appendChild(item)
 }
 
@@ -60,12 +64,14 @@ function createCarrossel(elementoPai,numImgs,src1,src2,src3,src4){
     divImages.appendChild(image2)
     if(numImgs > 2){
         let image3 = document.createElement("img")
-        let image4 = document.createElement("img")
         image3.classList.add("img-carrossel")
-        image4.classList.add("img-carrossel")
         image3.src = src3
-        image4.src = src4
         divImages.appendChild(image3)
+    }
+    if(numImgs > 3){
+        let image4 = document.createElement("img")
+        image4.classList.add("img-carrossel")
+        image4.src = src4
         divImages.appendChild(image4)
     }
     carrossel.appendChild(divImages)

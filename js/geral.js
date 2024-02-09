@@ -1,5 +1,5 @@
+let index = 0
 //indicie do carrossel
-let index = 0;
 
 function carrosselAuto(getimgs, numImgs){
     const imgs = document.querySelector(getimgs)
@@ -18,33 +18,18 @@ function abreFechaMenuHamb(){
         ulHamb.setAttribute('class', "hamb-anim-down")
         setTimeout(() => {
             ulHamb.setAttribute("class", "hamb-fix-down")
-        }, 1100)
+        }, 990)
 
     }else{
         ulHamb.setAttribute('class', "hamb-anim-up")
         setTimeout(() => {
             menuHamb.style.display = "none"
             ulHamb.setAttribute("class", "hamb-fix-up")
-        }, 380)
+        }, 480)
     }
 }
-function novidadesHome(){
-    createCarrossel("section.carrossel",3,"img/novidades/assistente-novidade.jpg","img/novidades/vr-novidade.jpg","img/novidades/relogio-novidade.jpg")
-}
-function destaquesHome(){
-    fetch("dados.json").then(response => response.json()).then(
-        dados =>{
-            dados.map(
-                dado => {
-                    if(dado.destaque == true){
-                        createCardProduto(dado,"section.destaques")
-                    }
-                }
-            )
-        }
-    )
-}
-
-function carrosselHome(){
-    setInterval("carrosselAuto('div.carr-images',3)",5000)
+function inicialização(){
+    if(Number(document.body.style.width) < 500){
+        document.querySelector("div.menu-hamb").style.display = 'none'
+    }
 }

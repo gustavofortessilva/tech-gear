@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body onload="destaquesHome(),novidadesHome(),createFooter(), carrosselHome()">
+<body onload="destaquesHome(),novidadesHome(),createFooter(), carrosselHome(), inicialização()">
     <header>
         <div class="header-top">
             <nav class="buttons">
@@ -18,8 +18,23 @@
             </nav>
             <div class="logo">
                 <img src="img/outros/icon-logo.png" alt="logo engrenagem">
-                <h1>Teck Gear Emporium</h1>
-                <p>Sua loja de Equipamentos eletrônicos</p>
+                <span class="titulos-header">
+                    <h1>Teck Gear Emporium</h1>
+                    <p>Sua loja de Equipamentos eletrônicos</p>
+                </span>
+            </div>
+            <div class="buttons-response">
+                <ul>
+                    <li>
+                        <a href="#" target="_self">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Carrinho</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <nav class="menu">
@@ -31,6 +46,9 @@
                     </li>
                     <li>
                         <a href="#" target="_self">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Carrinho</a>
                     </li>
                 </ul>
             </div>
@@ -55,9 +73,47 @@
             <a href="#">Veja Mais</a><!-- Conteúdo criado pelo JS, pelo DOM-->
         </div>
     </section>
+    <section class="relatos">
+        <div class="titulos-home"><h2>Relatos dos Clientes:</h2></div>
+        <div class="rel-item-container">
+            <div class="rel-item">
+                <div class="top-rel">
+                    <button type="button" id="buttonLeft" class="no-click" onclick="moveCarrosselRelatosHome('left')"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                    <div class="rel-images">
+                        <div class="rel-images-container">
+                            <img src="img/clientes/cliente-1.jpg" alt="Cliente Feliz">
+                            <img src="img/clientes/cliente-2.jpg" alt="Cliente Feliz">
+                            <img src="img/clientes/cliente-3.jpg" alt="Cliente Feliz">
+                            <img src="img/clientes/cliente-4.jpg" alt="Cliente Feliz">
+                        </div>
+                    </div>
+                    <button type="button" id="buttonRight" onclick="moveCarrosselRelatosHome('right')"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                </div>
+                <div class="bottom-rel">
+                    <div class="rel-nomes">
+                        <div class="rel-nomes-container">
+                            <h3>Fernanda</h3>
+                            <h3>Julia</h3>
+                            <h3>Matheus</h3>
+                            <h3>Marcos</h3>
+                        </div>
+                    </div>
+                    <div class="rel-txts">
+                        <div class="rel-txts-container">
+                            <p>'Meu novo notebook é simplesmente incrível! A performance é surpreendente, a tela é nítida, atendem perfeitamente às minhas necessidades. Agradeço pela recomendação personalizada da equipe.'</p>
+                            <p>'Estou maravilhada com a praticidade que o assistente de casa inteligente trouxe à minha rotina. Controlar as luzes, temperatura. Ótima escolha e entrega rápida!'</p>
+                            <p>'Meu novo smartwatch não sai do meu pulso! Design elegante, funções fitness e as notificações integradas são extremamente úteis para mim. A bateria dura muito, recomendo demais!'</p>
+                            <p>'Estou completamente apaixonado pelos meus novos fones de ouvido sem fio desta loja! A qualidade do som é excepcional, a conectividade é estável e confortável. Foi a melhor escolha, valeu a pena!'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
     <footer class="f1"><!-- Conteúdo criado pelo JS, pelo DOM--></footer>
     <script src="js/geral.js"></script>
     <script src="js/builder.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

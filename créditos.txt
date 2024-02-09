@@ -38,6 +38,12 @@ Fotos:{
     Banner(
         -Foto de Miguel Á. Padriñán: https://www.pexels.com/pt-br/foto/placa-de-circuito-verde-343457/
     )
+    Clientes(
+        -Foto de Italo Melo: https://www.pexels.com/pt-br/foto/foto-de-retrato-de-um-homem-sorridente-com-os-bracos-cruzados-em-frente-a-uma-parede-branca-2379004/
+        -Foto de Monstera Production: https://www.pexels.com/pt-br/foto/adolescente-do-sexo-masculino-etnico-alegre-carregando-skate-e-rindo-apos-o-treino-no-parque-5384429/
+        -Foto de Miguel  Arcanjo Saddi: https://www.pexels.com/pt-br/foto/foco-raso-fotografia-de-mulher-de-cabelo-preto-1213769/
+        -Foto de Daniel Xavier: https://www.pexels.com/pt-br/foto/mulher-usando-oculos-pretos-1239291/
+    )
 }
 Icones{
     -https://www.flaticon.com/br/icones-gratis/engrenagem"

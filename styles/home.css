@@ -1,76 +1,79 @@
 @charset "UTF-8";
-
-@keyframes downHamb {
-    0%{
-        transform: translateY(-86px)
-    }
-    100%{
-        transform: translateY(0px);
+/* responsividade banner */
+@media screen and (max-width:750px) {
+    section.banner{
+        padding: 150px 0px;
     }
 }
 
-@keyframes upHamb {
-    0%{
-        transform: translateY(0px);
+@media screen and (min-width:750px) and (max-width:850px){
+    section.banner{
+        padding: 200px 0px;
     }
-    100%{
-        transform: translateY(-86px);
+}
+
+@media screen and (min-width:850px) and (max-width:1200px){
+    section.banner{
+        padding: 250px 0px;
+    }
+}
+@media screen and (min-width:1200px){
+    section.banner{
+        padding: 300px 0px;
+    }
+}
+/* responsividade destaques e relatos e novidades*/
+@media screen and (max-width:850px) {
+    /* item destaque */
+    section.destaques div.dest-item{
+        flex-direction: column;
+    }
+    div.dest-item div.item-dest-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* imagem item destaque */
+    section.destaques div.dest-item img{
+        width: 100%;
+    }
+    div.rel-item{
+        padding: 15px 0px;
+    }
+    div.carrossel{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width:850px) {
+    section.destaques div.dest-item{
+        flex-direction: row;
+        height: 350px;
+    }
+    section.destaques div.dest-item img{
+        object-fit: cover;
+        height: 116%;
+        width: 60%;
+    }
+    div.dest-item div.item-dest-bottom{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    div.rel-item{
+        padding: 30px 0px;
+    }
+    div.carrossel{
+        width: 800px;
+        margin: auto;
     }
 }
 
 :root{
-    --azulEscuro:#2C3E50;
-    --azulClaro:#3498DB;
-    --branco:#ECF0F1;
-    --vermelho:#E74C3C;
-}
-
-*{
-    margin:0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-body{
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-/* cabeçalho */
-header{
-    position: relative;
-    color: var(--branco);
-    text-align: center;
-}
-
-header div.header-top{
-    background-image: linear-gradient(135deg , var(--azulEscuro), #0f4a71);
-    padding: 10px;
-}
-
-header div.header-top p{
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: 0.95em
-}
-
-header nav.buttons{
-    display: flex;
-    justify-content: end;
-    padding: 10px;
-    gap: 15px;
-}
-
-header nav.buttons a{
-    color: var(--branco);
-}
-
-header div.logo{
-    margin: 10px 30px;
-}
-
-header div.logo img{
-    display: inline-block;
-    width: 130px;
+    /* tempo de transição dos relatos dos clientes */
+    --tempoTransiRel: .9s;
 }
 
 /* banner */
@@ -78,7 +81,6 @@ section.banner{
     background-image: url(../img/outros/banner.png);
     background-size: contain;
     background-position: center center;
-    padding: 150px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +121,18 @@ section.destaques{
     padding: 30px 0px;
     gap: 20px;
 }
-/* titulos destaques e novidades */
+/* item destaque */
+section.destaques div.dest-item{
+    display: flex;
+    padding-bottom: 25px;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #000000b0;
+    width: 85%;
+    overflow: hidden;
+}
+/* titulos destaques e novidades e relatos*/
 div.titulos-home{
     width: 80%;
     padding: 20px;
@@ -136,26 +149,12 @@ div.titulos-home a{
     text-decoration: none;
     font-weight: bold;
 }
-/* item destaque */
-section.destaques div.dest-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px #000000b0;
-    width: 85%;
-    overflow: hidden;
-}
-/* imagem item destaque */
-section.destaques div.dest-item img{
-    display: inline-block;
-    width: 100%;
-}
+
+
 /* textos item em destaque */
 section.destaques div.dest-item div.dest-txt{
     color: #252525;
     text-align: center;
-    padding: 10px;
 }
 /* preço anterior */
 div.dest-txt div.precos p.preco-antes{
@@ -173,8 +172,6 @@ div.dest-item a{
     color: var(--azulClaro);
     font-weight: bold;
     text-decoration: none;
-    margin: 10px 0px;
-    padding: 7px;
     transition: color .3s;
 }
 /* hover links destaques */
@@ -189,4 +186,106 @@ section.carrossel{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+/* carrossel */
+div.carrossel{
+    overflow: hidden;
+}
+div.carrossel div.carr-images{
+    display: flex;
+    transition: transform .5s;
+}
+/* imagem carrossel */
+div.carrossel img{
+    width: 100%;
+}
+
+/* relatos*/
+section.relatos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+div.rel-item-container{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(93, 240, 208);
+}
+div.rel-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: var(--branco);
+    
+}
+div.top-rel{
+    display: flex;
+    justify-content: space-around;
+}
+div.top-rel button{
+    background-color: var(--branco);
+    border: none;
+}
+
+div.top-rel button:hover{
+    cursor: pointer;
+}
+
+div.top-rel button.no-click{
+    opacity: 0.5;
+    cursor: default;
+}
+div.top-rel button.no-click:hover{
+    cursor: default;
+}
+
+div.top-rel button span{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333333a9;
+}
+div.top-rel div.rel-images{
+    overflow-x: hidden;
+    width: 100px;
+}
+div.top-rel div.rel-images-container{
+    display: flex;
+    transition: transform var(--tempoTransiRel);
+}
+div.top-rel div.rel-images img{
+    width: 100px;
+}
+
+div.bottom-rel div.rel-nomes{
+    width: 82px;
+    overflow-x: hidden;
+    margin: auto;
+}
+div.bottom-rel div.rel-nomes-container{
+    display: flex;
+    gap: 50px;
+    transition: transform var(--tempoTransiRel);
+}
+div.bottom-rel div.rel-nomes h3{
+    display: inline-block;
+}
+div.bottom-rel div.rel-txts{
+    overflow: hidden;
+}
+div.bottom-rel div.rel-txts-container{
+    display: flex;
+    width: 500%;
+    transition: transform var(--tempoTransiRel);
+}
+div.bottom-rel div.rel-txts p{
+    display: block;
+    width: 20%;
+    padding: 0px 1px;
+    text-align: center
 }
