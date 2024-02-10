@@ -107,6 +107,7 @@
 /* Responsividade Footer*/
 @media screen and (max-width:650px){
     footer div.links{
+        align-items: center;
         flex-direction: column;
         justify-content: center;
     }
@@ -114,6 +115,7 @@
 @media screen and (min-width:650px){
     footer div.links{
         flex-direction: row;
+        align-items: start;
         justify-content: space-evenly;
         padding-bottom: 40px;
     }
@@ -255,7 +257,6 @@ footer div.logo-footer h2{
 /* Div links */
 footer div.links{
     display: flex;
-    align-items: center;
 }
 
 footer div.links h3{
@@ -300,6 +301,7 @@ footer div.links div.border-bottom{
 /* Texto disclaimer */
 footer p{
     color: var(--branco);
+    text-align: center;
 }
 /* link texto disclaimer */
 footer p a{
