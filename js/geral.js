@@ -28,7 +28,7 @@ function abreFechaMenuHamb(){
         }, 480)
     }
 }
-function inicialização(){
+function fixMenu(){
     if(Number(document.body.style.width) < 500){
         document.querySelector("div.menu-hamb").style.display = 'none'
     }

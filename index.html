@@ -9,51 +9,8 @@
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body onload="destaquesHome(),novidadesHome(),createFooter(), carrosselHome(), inicialização()">
-    <header>
-        <div class="header-top">
-            <nav class="buttons">
-                    <a href="#" target="_self"><span class="material-symbols-outlined">shopping_cart</span></a>
-                    <a href="#" target="_self"><span class="material-symbols-outlined">contact_support</span></a>
-            </nav>
-            <div class="logo">
-                <img src="img/outros/icon-logo.png" alt="logo engrenagem">
-                <span class="titulos-header">
-                    <h1>Teck Gear Emporium</h1>
-                    <p>Sua loja de Equipamentos eletrônicos</p>
-                </span>
-            </div>
-            <div class="buttons-response">
-                <ul>
-                    <li>
-                        <a href="#" target="_self">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_self">Contato</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_self">Carrinho</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <nav class="menu">
-            <span class="material-symbols-outlined btn-hamb" onclick="abreFechaMenuHamb()">menu</span>
-            <div class="menu-hamb">
-                <ul>
-                    <li>
-                        <a href="#" target="_self">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_self">Contato</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_self">Carrinho</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<body onload="destaquesHome(),novidadesHome(),createFooter(), createHeader(), carrosselHome(), fixMenu()" onresize="fixMenu()">
+    <header><!-- Conteúdo criado pelo JS, pelo DOM--></header>
     <main>
        <section class="banner">
             <h2>

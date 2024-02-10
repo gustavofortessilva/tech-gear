@@ -4,7 +4,7 @@ function novidadesHome(){
 }
 
 function destaquesHome(){
-    fetch("produtos.json").then(response => response.json()).then(
+    fetch("jsons/produtos.json").then(response => response.json()).then(
         dados =>{
             dados.map(
                 dado => {
@@ -54,5 +54,4 @@ function moveCarrosselRelatosHome(direcao){
     }else if(direcao == 'left' && indexRelatos != 0){
         mudarSlide(direcao)
     }
-    
 }

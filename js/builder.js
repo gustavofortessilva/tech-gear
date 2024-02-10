@@ -132,10 +132,56 @@ function createFooter(){
     linkItens2.appendChild(tituloLinks2)
     linkItens2.appendChild(lista2)
     linkItens2.appendChild(bordaBaixo2)
-    linkItens2.appendChild(disclaimer)
     //div links => div link
     divLinks.appendChild(linkItens1)
     divLinks.appendChild(linkItens2)
     //footer finalizando
     footer.appendChild(divLinks)
+    footer.appendChild(disclaimer)
+}
+
+function createHeader(){
+    let header = document.querySelector("header")
+    let divHeaderTop = document.createElement("div")
+    divHeaderTop.classList.add("header-top")
+    //nav buttons
+    let navButtons = document.createElement("nav")
+    navButtons.classList.add("buttons")
+    let linkButtons1 = document.createElement("a")
+    let linkButtons2 = document.createElement("a")
+    linkButtons1.innerHTML = '<span class="material-symbols-outlined">shopping_cart</span>'
+    linkButtons2.innerHTML = '<span class="material-symbols-outlined">contact_support</span>'
+    navButtons.appendChild(linkButtons1)
+    navButtons.appendChild(linkButtons2)
+    divHeaderTop.appendChild(navButtons)
+    //Div Logo
+    let divLogo = document.createElement("div")
+    divLogo.classList.add("logo")
+    let imgLogo = document.createElement("img")
+    imgLogo.src = "img/outros/icon-logo.png"
+    imgLogo.alt = "logo engrenagem"
+    let linkImgLogo = document.createElement("a")
+    linkImgLogo.href = "https://youtube.com"
+    linkImgLogo.appendChild(imgLogo)
+    let spanTitulosHeader = document.createElement("span")
+    spanTitulosHeader.classList.add("titulos-header")
+    spanTitulosHeader.innerHTML = "<h1>Teck Gear Emporium</h1><p>Sua loja de Equipamentos eletrônicos</p>"
+    divLogo.appendChild(linkImgLogo)
+    divLogo.appendChild(spanTitulosHeader)
+    divHeaderTop.appendChild(divLogo)
+    //div buttons responsivos
+    let divButtonsResponse = document.createElement("div")
+    divButtonsResponse.classList.add("buttons-response")
+    divButtonsResponse.innerHTML = '<ul><li><a href="#">Produtos</a></li><li><a href="#">Contato</a></li><li><a href="#">Carrinho</a></li></ul>'
+    divHeaderTop.appendChild(divButtonsResponse)
+    header.appendChild(divHeaderTop)
+    //nav menu hamburger
+    let navMenu = document.createElement("nav")
+    navMenu.classList.add("menu")
+    navMenu.innerHTML = '<span class="material-symbols-outlined btn-hamb" onclick="abreFechaMenuHamb()">menu</span>'
+    let divMenuHamb = document.createElement("div")
+    divMenuHamb.classList.add("menu-hamb")
+    divMenuHamb.innerHTML = '<ul><li><a href="#" target="_self">Produtos</a></li><li><a href="#" target="_self">Contato</a></li><li><a href="#" target="_self">Carrinho</a></li></ul>'
+    navMenu.appendChild(divMenuHamb)
+    header.appendChild(navMenu)
 }

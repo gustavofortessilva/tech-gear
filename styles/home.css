@@ -220,6 +220,7 @@ div.rel-item{
     flex-direction: column;
     gap: 15px;
     width: 80%;
+    max-width: 750px;
     border-radius: 20px;
     background-color: var(--branco);
     

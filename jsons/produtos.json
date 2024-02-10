@@ -23,7 +23,7 @@
         "preco": "R$99.99",
         "precoanterior": "R$250.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/fone/fone-1.jpg",
-        "destaque": true,
+        "destaque": false,
         "desc1": "<li>Cancelamento de ruído e qualidade de áudio excepcional</li><li>Ajuste universal para conforto durante todo o dia</li><li>Ativação e ligação automáticas</li><li>Controle música e chamadas a partir dos seus AirPods</li>"
     },
     {
@@ -32,7 +32,7 @@
         "preco": "R$4299.99",
         "precoanterior": "R$6200.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/notebook/notebook-1.jpg",
-        "destaque": true,
+        "destaque": false,
         "desc1": "<li>Design elegante e alto desempenho</li><li>11ª geração de Intel Core i5-1135G7 4-core, cache de 8MB, até 4.2GHz</li><li>Memória de 8GB 2x4GB, DDR4, 2666MHz; Expansível até 16GB 2 slots soDIMM</li><li>SSD de 256GB PCIe NVMe M.2</li><li>Full HD de 15.6'' 1920 x 1080 WVA</li>"
     },
     {
@@ -50,7 +50,7 @@
         "preco": "R$1999.99",
         "precoanterior": "R$2500.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/vr/vr-1.jpg",
-        "destaque": true,
+        "destaque": false,
         "desc1": "<li>Explore mundos virtuais imersivos</li><li>VR Avançada: Uso independente ou conectado a PC</li><li>Gráficos Melhorados: Maior densidade de pixels.</li><li>Rastreamento 6DOF: Movimentos precisos sem sensores externos.</li><li>Touch Controllers Redesenhados: Ergonomia aprimorada.</li><li>Conforto Personalizado: Tira de cabeça ajustável para leveza.</li>"
     }
 ]
