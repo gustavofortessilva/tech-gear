@@ -27,7 +27,6 @@
     /* item destaque */
     section.destaques div.dest-item{
         flex-direction: column;
-        padding-bottom: 30px;
     }
     div.dest-item div.item-dest-bottom{
         display: flex;

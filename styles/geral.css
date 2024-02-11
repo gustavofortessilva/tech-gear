@@ -232,6 +232,71 @@ div.menu-hamb ul li a{
     text-decoration: none;
 }
 
+/* seção destaques */
+section.destaques{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 20px;
+}
+/* item destaque */
+div.dest-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #000000b0;
+    width: 85%;
+    overflow: hidden;
+}
+/* titulos destaques e novidades e relatos*/
+div.titulos-pag{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: baseline;
+    border-bottom: 4px solid var(--azulClaro);
+}
+/* link veja mais (destaques e novidades) */
+div.titulos-pag a{
+    color: var(--azulClaro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* textos item em destaque */
+section.destaques div.dest-item div.dest-txt{
+    color: #252525;
+    text-align: center;
+}
+/* preço anterior */
+div.dest-txt div.precos p.preco-antes{
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: var(--vermelho);
+}
+/* preço atual */
+div.dest-txt div.precos p.preco-atual{
+    color: green;
+    font-size: 1.7em;
+}
+/* link Produto Destaque */
+div.dest-item a{
+    color: var(--azulClaro);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color .3s;
+}
+/* hover links destaques */
+div.dest-item a:hover{
+    color: #6cacd6;
+}
+
 /* footer */
 footer{
     width: 100%;

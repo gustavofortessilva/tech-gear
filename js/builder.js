@@ -32,7 +32,7 @@ function createCardProduto(dado,container){
     image.alt = dado.name
     preco.innerHTML = dado.preco
     link.innerHTML = "Veja mais informações"
-    link.href = `tech-gear/paginas-produtos/${dado.name}.html`
+    link.href = `tech-gear/paginas-produtos/${dado.namePagina}.html`
     //atribuindo elementos a página
     if(dado.destaque == true){
         precoantes.innerHTML = dado.precoanterior
@@ -78,8 +78,8 @@ function createCarrossel(elementoPai,numImgs,src1,src2,src3,src4){
     container.appendChild(carrossel)
 }
 
-function createFooter(){
-    let footer = document.querySelector("footer.f1")
+function createFooter(pastaAtual){
+    let footer = document.querySelector("footer")
     //logo
     let logoFooter = document.createElement("div")
     logoFooter.classList.add("logo-footer")
@@ -105,7 +105,15 @@ function createFooter(){
     tituloLinks1.innerHTML = "Páginas:"
     //lista de links 1
     let lista1 = document.createElement("ul")
-    lista1.innerHTML = '<li><a href="#">Home</a></li><li><a href="#">Produtos</a></li><li><a href="#">Contato</a></li><li><a href="#">Carrinho</a></li>'
+    switch(pastaAtual){
+        case 'sameFolder':
+            lista1.innerHTML = '<li><a href="index.html">Home</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="contato.html">Contato</a></li><li><a href="carrinho.html">Carrinho</a></li>'
+            break
+        case 'folderProdutos':
+            lista1.innerHTML = '<li><a href="../index.html">Home</a></li><li><a href="../produtos.html">Produtos</a></li><li><a href="../contato.html">Contato</a></li><li><a href="../carrinho.html">Carrinho</a></li>'
+            break
+    }
+    
     //borda em baixo
     let bordaBaixo1 = document.createElement("div")
     bordaBaixo1.classList.add("border-bottom")
@@ -140,7 +148,7 @@ function createFooter(){
     footer.appendChild(disclaimer)
 }
 
-function createHeader(){
+function createHeader(pastaAtual){
     let header = document.querySelector("header")
     let divHeaderTop = document.createElement("div")
     divHeaderTop.classList.add("header-top")
@@ -161,7 +169,7 @@ function createHeader(){
     imgLogo.src = "img/outros/icon-logo.png"
     imgLogo.alt = "logo engrenagem"
     let linkImgLogo = document.createElement("a")
-    linkImgLogo.href = "https://youtube.com"
+    linkImgLogo.href = "../index.html"
     linkImgLogo.appendChild(imgLogo)
     let spanTitulosHeader = document.createElement("span")
     spanTitulosHeader.classList.add("titulos-header")
@@ -172,7 +180,14 @@ function createHeader(){
     //div buttons responsivos
     let divButtonsResponse = document.createElement("div")
     divButtonsResponse.classList.add("buttons-response")
-    divButtonsResponse.innerHTML = '<ul><li><a href="#">Produtos</a></li><li><a href="#">Contato</a></li><li><a href="#">Carrinho</a></li></ul>'
+    switch(pastaAtual){
+        case 'sameFolder':
+            divButtonsResponse.innerHTML = '<ul><li><a href="produtos.html">Produtos</a></li><li><a href="contato.html">Contato</a></li><li><a href="carrinho.html">Carrinho</a></li></ul>'
+            break
+        case 'folderProdutos':
+            divButtonsResponse.innerHTML = '<ul><li><a href="../produtos.html">Produtos</a></li><li><a href="../contato.html">Contato</a></li><li><a href="../carrinho.html">Carrinho</a></li></ul>'
+            break
+    }
     divHeaderTop.appendChild(divButtonsResponse)
     header.appendChild(divHeaderTop)
     //nav menu hamburger
@@ -181,7 +196,14 @@ function createHeader(){
     navMenu.innerHTML = '<span class="material-symbols-outlined btn-hamb" onclick="abreFechaMenuHamb()">menu</span>'
     let divMenuHamb = document.createElement("div")
     divMenuHamb.classList.add("menu-hamb")
-    divMenuHamb.innerHTML = '<ul><li><a href="#" target="_self">Produtos</a></li><li><a href="#" target="_self">Contato</a></li><li><a href="#" target="_self">Carrinho</a></li></ul>'
+    switch(pastaAtual){
+        case 'sameFolder':
+            divMenuHamb.innerHTML = '<ul><li><a href="produtos.html">Produtos</a></li><li><a href="contato.html">Contato</a></li><li><a href="carrinho.html">Carrinho</a></li></ul>'
+            break
+        case 'folderProdutos':
+            divMenuHamb.innerHTML = '<ul><li><a href="../">Produtos</a></li><li><a href="../">Contato</a></li><li><a href="../">Carrinho</a></li></ul>'
+            break
+    }
     navMenu.appendChild(divMenuHamb)
     header.appendChild(navMenu)
 }

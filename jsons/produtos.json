@@ -2,6 +2,7 @@
     {
         "id": "0001",
         "name": "Assistente de Casa Inteligente",
+        "namePagina":"assistente-inteligente",
         "preco": "R$299.99",
         "precoanterior": "R$500.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/assistente/assistente-1.jpg",
@@ -11,6 +12,7 @@
     {
         "id": "0002",
         "name": "Câmera DSLR de Última Geração",
+        "namePagina":"camera-dslr",
         "preco": "R$3999.99",
         "precoanterior": "R$5000.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/camera/camera-1.jpg",
@@ -20,6 +22,7 @@
     {
         "id": "0003",
         "name": "Fones de Ouvido sem Fio Premium",
+        "namePagina":"fone-de-ouvido",
         "preco": "R$99.99",
         "precoanterior": "R$250.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/fone/fone-1.jpg",
@@ -29,6 +32,7 @@
     {
         "id": "0004",
         "name": "Notebook Ultrafino e Potente",
+        "namePagina":"notebook",
         "preco": "R$4299.99",
         "precoanterior": "R$6200.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/notebook/notebook-1.jpg",
@@ -38,6 +42,7 @@
     {
         "id": "0005",
         "name": "Smartwatch Avançado",
+        "namePagina":"smartwatch",
         "preco": "R$2999.99",
         "precoanterior": "R$3500.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/relogio/relogio-1.jpg",
@@ -47,6 +52,7 @@
     {
         "id": "0006",
         "name": "Kit de Realidade Virtual",
+        "namePagina":"kit-vr",
         "preco": "R$1999.99",
         "precoanterior": "R$2500.00",
         "capa":"https://gustavofortessilva.github.io/tech-gear/img/vr/vr-1.jpg",
