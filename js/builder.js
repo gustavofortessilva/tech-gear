@@ -156,7 +156,9 @@ function createHeader(pastaAtual){
     let navButtons = document.createElement("nav")
     navButtons.classList.add("buttons")
     let linkButtons1 = document.createElement("a")
+    linkButtons1.href = "carrinho.html"
     let linkButtons2 = document.createElement("a")
+    linkButtons2.href = "contato.html"
     linkButtons1.innerHTML = '<span class="material-symbols-outlined">shopping_cart</span>'
     linkButtons2.innerHTML = '<span class="material-symbols-outlined">contact_support</span>'
     navButtons.appendChild(linkButtons1)

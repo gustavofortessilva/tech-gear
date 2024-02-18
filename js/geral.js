@@ -1,6 +1,11 @@
-let index = 0
-//indicie do carrossel
+// onload páginas
+function loadPage(folder){
+    createFooter(folder)
+    createHeader(folder)
+    fixMenu()
+}
 
+//indicie do carrossel
 function carrosselAuto(getimgs, numImgs){
     const imgs = document.querySelector(getimgs)
     index++
@@ -10,6 +15,7 @@ function carrosselAuto(getimgs, numImgs){
     imgs.style.transform = `translateX(${(-index)*100}%)`
 }
 
+let index = 0
 function abreFechaMenuHamb(){
     let menuHamb = document.querySelector("div.menu-hamb")
     let ulHamb = document.querySelector("div.menu-hamb ul")
@@ -19,7 +25,6 @@ function abreFechaMenuHamb(){
         setTimeout(() => {
             ulHamb.setAttribute("class", "hamb-fix-down")
         }, 990)
-
     }else{
         ulHamb.setAttribute('class', "hamb-anim-up")
         setTimeout(() => {

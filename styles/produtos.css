@@ -61,7 +61,6 @@ div.item-dest-bottom{
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    padding-bottom: 20px;
 }
 div.dest-txt{
     text-align: center;
