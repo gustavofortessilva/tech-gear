@@ -169,7 +169,14 @@ function createHeader(pastaAtual){
     imgLogo.src = "img/outros/icon-logo.png"
     imgLogo.alt = "logo engrenagem"
     let linkImgLogo = document.createElement("a")
-    linkImgLogo.href = "../index.html"
+    switch(pastaAtual){
+        case 'sameFolder':
+            linkImgLogo.href = "index.html"
+            break
+        case 'folderProdutos':
+            linkImgLogo.href = "../index.html"
+            break
+    }
     linkImgLogo.appendChild(imgLogo)
     let spanTitulosHeader = document.createElement("span")
     spanTitulosHeader.classList.add("titulos-header")

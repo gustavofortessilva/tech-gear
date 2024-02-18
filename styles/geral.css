@@ -33,8 +33,10 @@
     }
     div.menu-hamb ul li{
         background-color: #2070a5;
-        padding: 10px;
         border-bottom: 2px solid #3498DB;
+    }
+    div.menu-hamb ul li a{
+        padding: 10px;
     }
     header div.logo img{
         display: inline-block;
@@ -228,6 +230,7 @@ div.menu-hamb ul li:hover{
 }
 
 div.menu-hamb ul li a{
+    display: block;
     color: white;
     text-decoration: none;
 }
