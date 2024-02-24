@@ -2,7 +2,35 @@
 function loadPage(folder){
     createFooter(folder)
     createHeader(folder)
+    geralHead(folder)
     fixMenu()
+}
+
+function geralHead(folder){
+    let head = document.head
+    document.title = "Tech Gear Emporium"
+    let link1 = document.createElement("link")
+    let link2 = document.createElement("link")
+    let link3 = document.createElement("link")
+
+    link1.setAttribute("rel", "stylesheet")
+    if(folder == "sameFolder"){
+        link1.setAttribute("href", "styles/geral.css")
+        link3.setAttribute("href", "img/outros/favicon.ico")
+    }else if(folder == "folderProdutos"){
+        link1.setAttribute("href", "../styles/geral.css")
+        link3.setAttribute("href", "../img/outros/favicon.ico")
+    }else{
+        alert("Algo deu Errado")
+    }
+
+    link2.setAttribute("rel", "stylesheet")
+    link2.setAttribute("href", "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0")
+    link3.setAttribute("rel", "shortcut icon")
+    link3.setAttribute("type", "image/x-icon")
+    head.appendChild(link1)
+    head.appendChild(link2)
+    head.appendChild(link3)
 }
 
 //indicie do carrossel

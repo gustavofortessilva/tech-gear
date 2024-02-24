@@ -7,55 +7,92 @@
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="styles/contato.css">
-    <title>Teck Gear Emporium</title>
+    <title></title>
+    <!-- Conteúdo criado pelo JS, pelo DOM-->
 </head>
 <body onload="loadPage('sameFolder')" onresize="fixMenu()">
     <header><!-- Conteúdo criado pelo JS, pelo DOM--></header>
     <main>
         <div class="titulos-pag"><h2>Entre em Contato Conosco:</h2></div>
+        <section class="formulario">
+            <h3>Formulário de Contato</h3>
+            <form action="">
+                <div class="form-item">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" autocomplete="name" placeholder="Nome completo">
+                </div>
+                <div class="form-item">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" autocomplete="email" placeholder="Email para Contato">
+                </div>
+                <div class="form-item">
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <option disabled selected>Selecione:</option>
+                        <option value="A">Teste2</option>
+                        <option value="A">Test3</option>
+                    </select>
+                </div>
+                <div class="form-item form-message">
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua Mensagem aqui"></textarea>
+                </div>
+                <div class="btn-submit">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
         <section class="contato">
             <h3>Informações de contato</h3>
-            <div class="contato-item">
-                <div class="top-contato-item">
-                    <span class="material-symbols-outlined">map</span>
-                    <h4>Endereço:</h4>
+            <div class="contato-itens-container">
+                <div class="contato-item">
+                    <div class="top-contato-item">
+                        <span class="material-symbols-outlined">map</span>
+                        <h4>Endereço:</h4>
+                    </div>
+                    <p>Rua Lorem, nº 0, bairro Ipsum<br>CEP: 00000-000. São Paulo - São Paulo.</p>
                 </div>
-                <p>Rua Lorem, nº 0, bairro Ipsum<br>CEP: 00000-000. São Paulo - São Paulo.</p>
-            </div>
-            <div class="contato-item">
-                <div class="top-contato-item">
-                    <span class="material-symbols-outlined">call</span>
-                    <h4>Telefone:</h4>
+                <div class="contato-item">
+                    <div class="top-contato-item">
+                        <div style="display: flex; gap: 10px;">
+                            <span class="material-symbols-outlined">call</span>
+                            <h4>Telefone:</h4>
+                        </div>
+                    </div>
+                    <p>(11)3333-3333</p>
                 </div>
-                <p>(11)3333-3333</p>
-            </div>
-            <div class="contato-item">
-                <div class="top-contato-item">
-                    <span class="material-symbols-outlined">mail</span>
-                    <h4>Email:</h4>
+                <div class="contato-item">
+                    <div class="top-contato-item">
+                        <span class="material-symbols-outlined">mail</span>
+                        <h4>Email:</h4>
+                    </div>
+                    <p>techgear@fake.com</p>
                 </div>
-                <p>techgear@fake.com</p>
-            </div>
-            <div class="contato-item">
-                <div class="top-contato-item">
-                    <img class="icon-whatsapp" src="img/outros/icons/icon-whatsapp.png" alt="icone whatsapp">
-                    <h4>Whatsapp:</h4>
+                <div class="contato-item">
+                    <div class="top-contato-item">
+                        <img class="icon-whatsapp" src="img/outros/icons/icon-whatsapp.png" alt="icone whatsapp">
+                        <h4>Whatsapp:</h4>
+                    </div>
+                    <p>(11)9 9999-9999</p>
                 </div>
-                <p>(11)9 9999-9999</p>
             </div>
         </section>
         <section class="horario">
             <h3>Horário de Atendimento</h3>
                 <div class="horario-itens">
                     <div class="horario-item">
-                        <h4>Segunda-feira - Sexta-feira</h4>
-                        <span class="material-symbols-outlined">schedule</span>
-                        <p>7h - 18h</p>
+                        <h4>Segunda - Sexta</h4>
+                        <div class="horario-item-bottom">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>7h - 18h</p>
+                        </div>
                     </div>
                     <div class="horario-item">
                         <h4>Sábado</h4>
-                        <span class="material-symbols-outlined">schedule</span>
-                        <p>7h - 12h</p>
+                        <div class="horario-item-bottom">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>7h - 12h</p>
+                        </div>
                 </div>
             </div>
         </section>

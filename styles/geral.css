@@ -337,6 +337,9 @@ footer div.links-itens{
     padding-top: 40px;
     text-align: center;
 }
+footer div.links img{
+    width: 25px;
+}
 footer div.links-itens ul{
     display: flex;
     flex-direction: column;
@@ -357,9 +360,7 @@ footer div.links-itens ul li a{
 footer div.links-itens ul li a:hover{
     text-decoration: underline;
 }
-img#whats{
-    border-radius: 50%;
-}
+
 /* Borda em baixo dos elementos */
 footer div.links div.border-bottom{
     width: 70vw;
