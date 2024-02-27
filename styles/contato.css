@@ -23,6 +23,34 @@
         justify-content: space-evenly;
     }
 }
+@media screen and (max-width:500px){
+    div.form-message{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:500px){
+    div.form-message{
+        flex-direction: row;
+    }
+}
+/* Responsividade mensagem resposta formulário */
+@media screen and (max-width:310.55px){
+    div.messages-container{
+        transform: translateY(288px);
+        
+    }
+}
+@media screen and (min-width:310.55px) and (max-width:500px){
+    div.messages-container{
+        transform: translateY(272px);
+    }
+}
+
+@media screen and (min-width:500px){
+    div.messages-container{
+        transform: translateY(250px);
+    }
+} 
 /* Geral */
 main{
     display: flex;
@@ -35,21 +63,116 @@ section.formulario{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(0, 183, 255);
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0px;
 }
 section.formulario h3{
     font-size: 1.5em;
+    color: white;
 }
 section.formulario form{
-
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px 0px;
 }
 form div.form-item{
-
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
 }
 div.form-item label{
-
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
 }
 div.form-item input{
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+}
+div.form-item select{
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 60%;
+}
+div.assunto-msg{
+    width: 100%;
+    display: none;
+}
+div.assunto-msg input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+div.form-message{
+    width: 100%;
+    align-items: center;
+}
+div.form-message textarea{
+    max-width: 100%;
+    min-width: 70%;
+    max-height: 300px;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+div.btn-submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.formulario button{
+    color: #fff;
+    font-size: 1em;
+    background-color: #235773;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    padding: 10px;
+    transition: background-color .3s;
+}
 
+section.formulario button:hover{
+    background-color: #2d7094;
+    cursor: pointer;
+}
+/* Mensagens de Confirmação ou de Erro */
+div.messages-container{
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+}
+div.confirm-msg{
+    background-color: rgb(3, 197, 3);
+    transform: translateY(-110%);
+    transition: transform .8s;
+}
+div.deny-msg{
+    background-color: rgb(231, 78, 17);
+    transform: translateY(-110%);
+    transition: transform .8s;
+}
+div.msgs{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
 }
 /* Contato */
 section.contato{
