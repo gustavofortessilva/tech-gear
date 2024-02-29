@@ -26,10 +26,10 @@
                     <label for="assunto">Assunto:</label>
                     <select name="assunto" id="assunto" onclick="verifyAssunto()" required>
                         <option disabled selected>Selecione:</option>
-                        <option value="Produtos">Dúvida sobre produtos</option>
-                        <option value="Site">Problemas com o site</option>
-                        <option value="Compra">Problemas com a compra</option>
-                        <option value="outro">Outro</option>
+                        <option value="Produtos" onclick="verifyAssunto()">Dúvida sobre produtos</option>
+                        <option value="Site" onclick="verifyAssunto()">Problemas com o site</option>
+                        <option value="Compra" onclick="verifyAssunto()">Problemas com a compra</option>
+                        <option value="outro" onclick="verifyAssunto()">Outro</option>
                     </select>
                 </div>
                 <div class="assunto-msg">
