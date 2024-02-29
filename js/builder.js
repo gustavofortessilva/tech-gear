@@ -32,7 +32,7 @@ function createCardProduto(dado,container){
     image.alt = dado.name
     preco.innerHTML = dado.preco
     link.innerHTML = "Veja mais informações"
-    link.href = `tech-gear/paginas-produtos/${dado.namePagina}.html`
+    link.href = `tech-gear/produtos/${dado.namePagina}.html`
     //atribuindo elementos a página
     if(dado.destaque == true){
         precoantes.innerHTML = dado.precoanterior
